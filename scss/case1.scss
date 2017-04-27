@@ -1,0 +1,393 @@
+/*
+* Furybird Product and Service Design Consulting
+* Jennifer Hicks
+* April 2017
+*/
+/* Table of Content
+==================================================
+	#Site Styles
+		- MAIN
+		- MASTHEAD
+		- FOOTER
+	#Section Styles
+		- HERO
+	#Media Queries
+		- MOBILE
+		- TABLET
+*/
+/* #Site Styles - Sticker UI Book CSS Styles 05.10.14
+================================================== */
+
+/* MAIN */
+@import 'base';
+@import 'skeleton';
+
+
+
+body {
+	margin:0;
+	padding:0;}
+
+
+a {
+    color: #231F20;
+	text-decoration:none;}
+
+a:hover {
+    color: #1C8DBB;
+    xopacity:0.8;
+    xfilter:alpha(opacity=80);}
+
+
+h1 {
+	font: 700 48px/48px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #63B7FB;
+	text-align:left;}
+
+h2 {
+	font: 700 36px/40px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #63B7FB;
+    text-align:left;
+	text-transform: uppercase;}
+
+h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #63B7FB;
+    text-align:left;}
+
+h4 {
+	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align:left;}
+
+
+h5{
+    font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
+	color: #9B9B9B;
+	text-align:left;
+	font-style: italic;}
+
+h6{
+	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+p{
+    font: 400 14px/22px 'Lato', Helvetica, Arial, sans-serif;
+	color: #454D56;
+	text-align:left;}
+
+img{
+	border:0px;}
+
+
+.text {
+	padding-top: 14px;
+	padding-bottom: 14px;}
+
+
+.main-button {
+	background-color: rgb(254, 191, 81);
+	border-radius:4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: none;
+	color: #fff;
+	height: 48px;
+	font: 700 16px/24px 'Lato', Helvetica, Arial, sans-serif;
+	margin-top: 32px;
+	text-align: center;
+	text-decoration: none;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: all;
+	transition-timing-function: ease;
+	width: 160px;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease;
+	}
+
+.main-button:hover{
+    background-color: #1C8DBB;
+    color: white;}
+
+.main-button:focus {
+	outline:0;}
+
+
+/* ================================================== */
+/* MASTHEAD */
+
+
+/* ================================================== */
+/* MASTHEAD */
+
+.header {
+	height: 124px;	}
+
+.text.nav {
+    padding-top:32px;
+    xtext-align:center}
+
+.text.nav ul {
+    list-style: none;
+    padding-top:24px;
+    width:100%;}
+
+.text.nav li {
+	list-style: none;
+	display: inline-block;
+	text-align:left;
+	vertical-align: middle;
+	text-wrap:none;
+	padding-left:28px;
+	padding-right:28px;
+	font:700 11px/18px 'Lato', Helvetica, Arial, sans-serif;
+	color: #595959;
+	text-transform: uppercase;
+}
+
+.text.nav li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.text.nav li a:hover{
+	color: #5fb881;
+}
+
+.text.nav object{
+	width:72px;
+	height:auto;
+	margin-left:-18px;}
+
+
+
+
+
+/* TEXT HERO */
+
+.text.hero {
+	padding-top: 32px;
+	padding-bottom: 64px;}
+
+.text.hero h1{
+	margin-bottom: 4px;}
+
+.text.hero h2{
+	padding-top: 32px;
+	padding-bottom: 32px;}
+
+.text.hero h4{
+	padding-right: 250px;}
+
+.text.hero #hero1{
+	width: 900px;
+	height: auto;
+	text-align: center;
+	}
+
+
+
+/* TEXT CLIENT */
+.text.client #logo1{
+	width: 180px;
+	height: auto;
+	margin-left: -14px;
+	padding-bottom:10px;}
+
+.text.client p{
+	padding-top: 24px;}
+
+
+/* TEXT CHALLENGES-TITLE */
+.text.challenges-title{
+	padding-bottom:0px;}
+
+
+/* TEXT CHALLENGES */
+.text.challenges object#complication {
+	height:69px;
+	width: auto;}
+
+.text.challenges object#resolution {
+	height:58px;
+	width: auto;
+	margin-left:-4px;}
+
+
+.text.challenges #right-col{
+	padding-top:11px;}
+
+
+
+/* TEXT IMG1 */
+.text.img1{
+	background: url('../assets/case-img1.png') no-repeat center center;
+	background-size: 100%;
+	min-height: 400px;}
+
+/* TEXT DETAIL1 */
+.text.detail1{
+	padding-top:72px;
+	padding-bottom:72px;}
+
+
+/* TEXT IMG2 */
+.text.img2{
+	background: url('../assets/case-img2.png') no-repeat center center;
+	background-size: 100%;
+	min-height: 600px;}
+
+
+/* TEXT DETAIL3 */
+.text.detail3 h4{
+	padding-right:72px;}
+
+
+/* TEXT IMG3 */
+.text.img3{
+	background: url('../assets/case-img3.png') no-repeat center center;
+	background-size: 70%;
+	min-height: 400px;
+	padding-top:0px;
+	padding-bottom:0px;}
+
+
+/* TEXT IMG3 */
+.text.img4 img{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom:64px;}
+
+
+/* TEXT DETAIL3 */
+.text.detail3{
+	padding-top:64px;
+	padding-bottom:64px;}
+
+
+/* TEXT DETAIL4 */
+.text.detail4{
+	padding-top:32px;
+	padding-bottom:64px;}
+
+
+/* TEXT FOOTER */
+.text.footer{
+	padding-top:64px;
+	padding-bottom:180px;}
+
+.text.footer hr{
+    width:30%;
+	margin-top:32px;
+	border: 3px solid #63B7FB;}
+
+
+
+
+
+
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;	}
+
+		#nav-item{
+			xpadding-right: 224px;}
+
+		.text.img2{
+			min-height: 500px;}
+
+		.text.img3{
+			min-height: 220px;}
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;}
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+		.text.img1{
+			min-height: 300px;}
+
+		.text.img2{
+			min-height: 350px;}
+
+		.text.img3{
+			min-height: 220px;}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 530px) and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 400px;
+			height: auto;}
+
+		.text.img1{
+			min-height: 250px;}
+
+		.text.img2{
+			min-height: 250px;}
+
+		.text.img3{
+			min-height: 180px;}
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 529px) {
+
+		img, iframe, object {
+			max-width: 272px;
+			height: auto;}
+
+		.text.img1{
+			min-height: 150px;}
+
+		.text.img2{
+			min-height:180px;}
+
+		.text.img3{
+			min-height: 110px;}
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+
+
+	}

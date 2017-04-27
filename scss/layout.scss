@@ -1,0 +1,421 @@
+/*
+* Furybird Product and Service Design Consulting
+* Jennifer Hicks
+* April 2017
+*/
+/* Table of Content
+==================================================
+	#Site Styles
+		- MAIN
+		- MASTHEAD
+		- FOOTER
+	#Section Styles
+		- HERO
+	#Media Queries
+		- MOBILE
+		- TABLET
+*/
+/* #Site Styles - Sticker UI Book CSS Styles 05.10.14
+================================================== */
+/* MAIN */
+@import 'base';
+@import 'skeleton';
+
+a {
+	color: #231F20;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #1C8DBB;
+	xopacity: 0.8;
+	xfilter:alpha(opacity=80);
+}
+
+h1 {
+	font: 700 30px/38px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	xfont: 700 28px/36px 'Lato', Helvetica, Arial, sans-serif;
+	color: #333;
+	text-align: left;
+}
+
+h2 {
+	font: 700 36px/40px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FCBF17;
+	text-align: left;
+	xtext-transform: uppercase;
+}
+
+h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FCBF17;
+	text-align: left;
+}
+
+h4 {
+	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: left;
+}
+
+h5 {
+	font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
+	color: #9B9B9B;
+	text-align: left;
+	font-style: italic;
+}
+
+h6 {
+	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+p {
+	font: 400 14px/22px 'Lato', Helvetica, Arial, sans-serif;
+	color: #454D56;
+	text-align: left;
+}
+
+img {
+	border: 0;
+}
+
+.text {
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+.main-button {
+	xborder-color: rgb(254, 191, 81);
+	background-color: #fff;
+	xborder-radius: 4px;
+	x-moz-border-radius: 4px;
+	x-webkit-border-radius: 4px;
+	border: 2px solid #FBCF17;
+	color: #FBCF17;
+	height: 48px;
+	font: 700 24px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	margin-top: 32px;
+	xpadding-bottom: 1px;
+	text-align: center;
+	text-decoration: none;
+	transition-delay: 0s;
+	transition-duration: 0.5s;
+	transition-property: all;
+	transition-timing-function: ease;
+	width: 160px;
+	-webkit-transition-delay: 0s;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease;
+}
+
+.main-button:hover {
+	border: 2px solid #63B7FB;
+	background-color: #fff;
+	color: #63B7FB;
+}
+
+.main-button:focus {
+	outline: 0;
+}
+/* ================================================== */
+/* NAVIGATION */
+.text.nav {
+	padding-top: 28px;
+	padding-bottom: 0;
+}
+
+.topnav {
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 99999;
+	height: 100%;
+}
+
+.furyicon {
+	width: 78px;
+	height: auto;
+	margin-left: -18px;
+}
+
+.topnav a {
+	font: 700 11px/18px 'Lato', Helvetica, Arial, sans-serif;
+	color: #333;
+	display: inline-block;
+	padding-top: 24px;
+	padding-left: 28px;
+	padding-right: 28px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: left;
+}
+
+.topnav a:hover {
+	color: #FCBF17;
+	xbackground-color: #ddd;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+	display: none;
+	margin-left: -18px;
+}
+/* TEXT HERO */
+.text.hero {
+	xbackground: url('../assets/IMG_0265.jpg') no-repeat top center;
+	xbackground-size: cover;
+	xopacity: 0.9;
+	xmin-height: 600px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.text.hero li {
+	list-style: none;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	text-wrap: none;
+	padding-right: 28px;
+}
+
+#twitter-item {
+	margin-top: -6px;
+}
+
+.text.hero li svg {
+	padding-right: 4px;
+	margin-bottom: -2px;
+}
+/* TEXT WORKS TITLE */
+.text.works-title {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+/* TEXT TWITTER  */
+.text.tweets h4 {
+	padding-bottom: 12px;
+}
+
+.text.tweets .timeline-Tweet-author {
+	font: 700 11px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+}
+/* TEXT WORKS  */
+.text.works1,
+.text.works2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #fff;
+}
+
+.text.works1 > .container {
+	.columns {
+		background: url('../assets/IMG_0265.jpg') no-repeat top center;
+		min-height: 200px;
+	}
+
+	> .row:nth-of-type(2) > .columns {
+		&:nth-of-type(1) {
+			min-height: 420px;
+		}
+
+		&:nth-of-type(2) {
+			background: none;
+
+			> .row {
+				&:nth-of-type(1) > .columns {
+					&:nth-of-type(1) {
+						margin-left: 0;
+					}
+
+					&:nth-of-type(2) {
+						margin-right: 0;
+					}
+				}
+
+				&:nth-of-type(2) {
+					margin-bottom: 0;
+
+					> .columns {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+/* #Page Styles
+================================================== */
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	iframe,
+	img,
+	object {
+		max-width: 460px;
+		height: auto;
+	}
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	iframe,
+	img,
+	object {
+		max-width: 400px;
+		height: auto;
+	}
+
+	.text.nav {
+		padding-top: 0;
+	}
+
+	.topnav a {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+		padding-right: 0;
+	}
+
+	.topnav.responsive {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		opacity: 0.98;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 0;
+	}
+
+	.topnav.responsive a {
+		font: 700 24px/64px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+		color: #FCBF17;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	.topnav.responsive a:hover {
+		color: #63B7FB;
+	}
+
+	.topnav.responsive .menu {
+		padding-top: 64px;
+	}
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+	iframe,
+	img,
+	object {
+		max-width: 400px;
+		height: auto;
+	}
+
+	.text.nav {
+		padding-top: 0;
+	}
+
+	.topnav a {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+		padding-right: 0;
+	}
+
+	.topnav.responsive {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		opacity: 0.98;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 0;
+	}
+
+	.topnav.responsive a {
+		font: 700 24px/64px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+		color: #FCBF17;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	.topnav.responsive a:hover {
+		color: #63B7FB;
+	}
+
+	.topnav.responsive .menu {
+		padding-top: 64px;
+	}
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 529px) {
+	iframe,
+	img,
+	object {
+		max-width: 272px;
+		height: auto;
+	}
+
+	.text.nav {
+		padding-top: 0;
+	}
+
+	.topnav a {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+		padding-right: 0;
+	}
+
+	.topnav.responsive {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		opacity: 0.98;
+	}
+
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 0;
+	}
+
+	.topnav.responsive a {
+		font: 700 24px/64px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+		color: #FCBF17;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+	.topnav.responsive a:hover {
+		color: #63B7FB;
+	}
+
+	.topnav.responsive .menu {
+		padding-top: 64px;
+	}
+}
