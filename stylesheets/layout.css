@@ -860,30 +860,203 @@ img {
   font: 700 11px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif; }
 
 /* TEXT WORKS  */
-.text.works1,
-.text.works2 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid #fff; }
+.text.works > .container .columns {
+  xmin-height: 200px; }
+  .text.works > .container .columns img {
+    height: 220px;
+    width: auto; }
 
-.text.works1 > .container .columns {
-  background: url("../assets/IMG_0265.jpg") no-repeat top center;
-  min-height: 200px; }
+.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) {
+  position: relative; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    padding-top: 32px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    content: "Pager mobile integrated health service project image";
+    font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #FCBF17;
+    text-align: left; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1):hover {
+    cursor: pointer; }
+    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1):hover::after {
+      opacity: 1;
+      transition: opacity 0s; }
 
-.text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) {
-  min-height: 420px; }
+.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+  position: relative; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    padding-top: 32px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    content: "Killer expert paper goods for designers project image";
+    font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #FCBF17;
+    text-align: left; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2):hover {
+    cursor: pointer; }
+    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2):hover::after {
+      opacity: 1;
+      transition: opacity 0s; }
 
-.text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) {
+.text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) {
+  position: relative; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    padding-top: 32px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    content: "Swiftbank immersive 6 week consulting program for SME lending project image";
+    font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #FCBF17;
+    text-align: left; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1):hover {
+    cursor: pointer; }
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1):hover::after {
+      opacity: 1;
+      transition: opacity 0s; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+    height: 460px;
+    width: auto; }
+
+.text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) {
   background: none; }
-  .text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) {
-    margin-left: 0; }
-  .text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
-    margin-right: 0; }
-  .text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) {
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) {
+    margin-left: 0;
+    position: relative; }
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1)::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 6px);
+      padding-top: 32px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity .5s;
+      content: "boobs";
+      font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+      color: #FCBF17;
+      text-align: left; }
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1):hover {
+      cursor: pointer; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1):hover::after {
+        opacity: 1;
+        transition: opacity 0s; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+    margin-right: 0;
+    background-color: #FFB837;
+    height: 220px;
+    opacity: 0.5; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) {
     margin-bottom: 0; }
-    .text.works1 > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns {
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns {
       margin-left: 0;
-      margin-right: 0; }
+      margin-right: 0;
+      position: relative; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 6px);
+        padding-top: 32px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .5s;
+        content: "Weenie";
+        font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+        color: #FCBF17;
+        text-align: left; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns:hover {
+        cursor: pointer; }
+        .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns:hover::after {
+          opacity: 1;
+          transition: opacity 0s; }
+
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(1) {
+  background-color: #FFB837;
+  height: 220px;
+  opacity: 0.2; }
+
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) {
+  position: relative; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    padding-top: 32px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    content: "naynay";
+    font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #FCBF17;
+    text-align: left; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2):hover {
+    cursor: pointer; }
+    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2):hover::after {
+      opacity: 1;
+      transition: opacity 0s; }
+
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(3) {
+  background-color: #FFB837;
+  height: 220px;
+  opacity: 0.7; }
+
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) {
+  position: relative; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 6px);
+    padding-top: 32px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity .5s;
+    content: "butt";
+    font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #FCBF17;
+    text-align: left; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4):hover {
+    cursor: pointer; }
+    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4):hover::after {
+      opacity: 1;
+      transition: opacity 0s; }
 
 /* #Page Styles
 ================================================== */

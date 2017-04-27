@@ -46,10 +46,13 @@ h2 {
 	xtext-transform: uppercase;
 }
 
-h3 {
+@mixin h3 {
 	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
 	color: #FCBF17;
 	text-align: left;
+}
+h3 {
+	@include h3;
 }
 
 h4 {
@@ -119,6 +122,34 @@ img {
 .main-button:focus {
 	outline: 0;
 }
+
+@mixin work-rollover($content) {
+	position:relative;
+	&::after {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:calc(100% - 6px);
+		padding-top:32px;
+		padding-left:20px;
+		box-sizing: border-box;
+		background-color:rgba(0,0,0,0.5);
+		opacity:0;
+		transition: opacity .5s;
+		content: $content;
+		@include h3;
+	}
+
+	&:hover {
+		cursor: pointer;
+		&::after {
+			opacity:1;
+			transition: opacity 0s;
+		}
+	}
+}
+
 /* ================================================== */
 /* NAVIGATION */
 .text.nav {
@@ -201,22 +232,33 @@ img {
 	font: 700 11px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
 }
 /* TEXT WORKS  */
-.text.works1,
-.text.works2 {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 1px solid #fff;
-}
+.text.works > .container {
+	.columns{
+		xmin-height: 200px;
 
-.text.works1 > .container {
-	.columns {
-		background: url('../assets/IMG_0265.jpg') no-repeat top center;
-		min-height: 200px;
+		img{
+			height:220px;
+			width:auto;
+		}
+	}
+	> .row:nth-of-type(1) > .columns {
+		&:nth-of-type(1) {
+			@include work-rollover('Pager mobile integrated health service project image');
+		}
+		&:nth-of-type(2) {
+			@include work-rollover('Killer expert paper goods for designers project image');
+		}
+
 	}
 
 	> .row:nth-of-type(2) > .columns {
 		&:nth-of-type(1) {
-			min-height: 420px;
+			@include work-rollover('Swiftbank immersive 6 week consulting program for SME lending project image');
+
+			img{
+				height:460px;
+				width:auto;
+			}
 		}
 
 		&:nth-of-type(2) {
@@ -226,10 +268,14 @@ img {
 				&:nth-of-type(1) > .columns {
 					&:nth-of-type(1) {
 						margin-left: 0;
+						@include work-rollover('boobs');
 					}
 
 					&:nth-of-type(2) {
 						margin-right: 0;
+						background-color: #FFB837;
+						height:220px;
+						opacity: 0.5;
 					}
 				}
 
@@ -239,11 +285,35 @@ img {
 					> .columns {
 						margin-left: 0;
 						margin-right: 0;
+						@include work-rollover('Weenie');
 					}
 				}
 			}
 		}
 	}
+	> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1) {
+				background-color: #FFB837;
+				height:220px;
+				opacity: 0.2;
+			}
+
+			&:nth-of-type(2) {
+				@include work-rollover('naynay');
+			}
+
+			&:nth-of-type(3) {
+				background-color: #FFB837;
+				height:220px;
+				opacity: 0.7;
+			}
+
+			&:nth-of-type(4) {
+				@include work-rollover('butt');
+			}
+
+		}
+
 }
 /* #Page Styles
 ================================================== */
