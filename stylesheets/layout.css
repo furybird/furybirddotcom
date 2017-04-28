@@ -755,24 +755,20 @@ img {
   padding-bottom: 48px; }
 
 .main-button {
-  xborder-color: #febf51;
   background-color: #fff;
-  xborder-radius: 4px;
-  x-moz-border-radius: 4px;
-  x-webkit-border-radius: 4px;
   border: 2px solid #FBCF17;
   color: #FBCF17;
   height: 48px;
-  font: 700 24px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+  font: 700 22px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
   margin-top: 32px;
-  xpadding-bottom: 1px;
+  padding: 0 14px 0 14px;
   text-align: center;
   text-decoration: none;
   transition-delay: 0s;
   transition-duration: 0.5s;
   transition-property: all;
   transition-timing-function: ease;
-  width: 160px;
+  xwidth: 160px;
   -webkit-transition-delay: 0s;
   -webkit-transition-duration: 0.5s;
   -webkit-transition-property: all;
@@ -825,10 +821,6 @@ img {
 
 /* TEXT HERO */
 .text.hero {
-  xbackground: url("../assets/IMG_0265.jpg") no-repeat top center;
-  xbackground-size: cover;
-  xopacity: 0.9;
-  xmin-height: 600px;
   padding-top: 64px;
   padding-bottom: 64px; }
 
@@ -850,6 +842,10 @@ img {
 /* TEXT WORKS TITLE */
 .text.works-title {
   padding-top: 64px;
+  padding-bottom: 0px; }
+
+.text.works {
+  padding-top: 24px;
   padding-bottom: 64px; }
 
 /* TEXT TWITTER  */
@@ -860,113 +856,131 @@ img {
   font: 700 11px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif; }
 
 /* TEXT WORKS  */
-.text.works > .container .columns {
-  xmin-height: 200px; }
-  .text.works > .container .columns img {
-    height: 220px;
-    width: auto; }
+.text.works > .container .columns img {
+  height: 220px;
+  width: auto; }
 
-.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) {
-  position: relative; }
-  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1)::after {
+.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) a {
+  position: relative;
+  display: block; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) a::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 6px);
     padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .5s;
-    content: "Pager mobile integrated health service project image";
+    content: "Pager Mobile Integrated Healthcare On-demand Service and AI Triage Chatbot";
     font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
     color: #FCBF17;
-    text-align: left; }
-  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1):hover {
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) a:hover {
     cursor: pointer; }
-    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1):hover::after {
+    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(1) a:hover::after {
       opacity: 1;
       transition: opacity 0s; }
 
-.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) {
-  position: relative; }
-  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2)::after {
+.text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) a {
+  position: relative;
+  display: block; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) a::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 6px);
     padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .5s;
-    content: "Killer expert paper goods for designers project image";
+    content: "Killer Inc. Paper Goods Supply Company Supplying Expert Tools for Sesigners";
     font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
     color: #FCBF17;
-    text-align: left; }
-  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2):hover {
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px; }
+  .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) a:hover {
     cursor: pointer; }
-    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2):hover::after {
+    .text.works > .container > .row:nth-of-type(1) > .columns:nth-of-type(2) a:hover::after {
       opacity: 1;
       transition: opacity 0s; }
 
-.text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) {
-  position: relative; }
-  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1)::after {
+.text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) a {
+  position: relative;
+  display: block; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) a::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 6px);
     padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .5s;
-    content: "Swiftbank immersive 6 week consulting program for SME lending project image";
+    content: "Swiftbank Immersive 6-week Design Consulting Program & User-Validated Rapid Prototype";
     font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
     color: #FCBF17;
-    text-align: left; }
-  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1):hover {
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px; }
+  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) a:hover {
     cursor: pointer; }
-    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1):hover::after {
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) a:hover::after {
       opacity: 1;
       transition: opacity 0s; }
-  .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) img {
-    height: 460px;
-    width: auto; }
+
+.text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+  height: 460px;
+  width: auto; }
 
 .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) {
   background: none; }
   .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) {
     margin-left: 0;
-    position: relative; }
-    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1)::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100% - 6px);
-      padding-top: 32px;
-      padding-left: 20px;
-      box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity .5s;
-      content: "boobs";
-      font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-      color: #FCBF17;
-      text-align: left; }
-    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1):hover {
-      cursor: pointer; }
-      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1):hover::after {
-        opacity: 1;
-        transition: opacity 0s; }
+    font-size: 16px;
+    line-height: 20px; }
+    .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) a {
+      position: relative;
+      display: block; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) a::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 6px);
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .5s;
+        content: "Mercury custom touchscreen multiline phone OS for professional day trading project image";
+        font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+        color: #FCBF17;
+        text-align: left;
+        font-size: 36px;
+        line-height: 42px; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) a:hover {
+        cursor: pointer; }
+        .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(1) a:hover::after {
+          opacity: 1;
+          transition: opacity 0s; }
   .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
     margin-right: 0;
     background-color: #FFB837;
@@ -976,56 +990,65 @@ img {
     margin-bottom: 0; }
     .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns {
       margin-left: 0;
-      margin-right: 0;
-      position: relative; }
-      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 6px);
-        padding-top: 32px;
-        padding-left: 20px;
-        box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity .5s;
-        content: "Weenie";
-        font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-        color: #FCBF17;
-        text-align: left; }
-      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns:hover {
-        cursor: pointer; }
-        .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns:hover::after {
-          opacity: 1;
-          transition: opacity 0s; }
+      margin-right: 0; }
+      .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns a {
+        position: relative;
+        display: block; }
+        .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns a::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: calc(100% - 6px);
+          padding-top: 32px;
+          padding-left: 32px;
+          padding-right: 32px;
+          box-sizing: border-box;
+          background-color: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity .5s;
+          content: "Amplify Customized Android Tablet Operating System for Teachers and Students";
+          font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+          color: #FCBF17;
+          text-align: left;
+          font-size: 36px;
+          line-height: 42px; }
+        .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns a:hover {
+          cursor: pointer; }
+          .text.works > .container > .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(2) > .columns a:hover::after {
+            opacity: 1;
+            transition: opacity 0s; }
 
 .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(1) {
   background-color: #FFB837;
   height: 220px;
   opacity: 0.2; }
 
-.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) {
-  position: relative; }
-  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2)::after {
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) a {
+  position: relative;
+  display: block; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) a::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 6px);
     padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .5s;
-    content: "naynay";
+    content: "Project Joy Wealth Management Service Design for the Mass Affluent in Brazil";
     font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
     color: #FCBF17;
-    text-align: left; }
-  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2):hover {
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) a:hover {
     cursor: pointer; }
-    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2):hover::after {
+    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(2) a:hover::after {
       opacity: 1;
       transition: opacity 0s; }
 
@@ -1034,29 +1057,64 @@ img {
   height: 220px;
   opacity: 0.7; }
 
-.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) {
-  position: relative; }
-  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4)::after {
+.text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) a {
+  position: relative;
+  display: block; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) a::after {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 6px);
     padding-top: 32px;
-    padding-left: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     transition: opacity .5s;
-    content: "butt";
+    content: "Trade Armor Disruptive Toolset for Advanced Amateur Day Trading Platform project image";
     font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
     color: #FCBF17;
-    text-align: left; }
-  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4):hover {
+    text-align: left;
+    font-size: 36px;
+    line-height: 42px; }
+  .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) a:hover {
     cursor: pointer; }
-    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4):hover::after {
+    .text.works > .container > .row:nth-of-type(3) > .columns:nth-of-type(4) a:hover::after {
       opacity: 1;
       transition: opacity 0s; }
+
+/* FOOTER STYLES */
+.text.footer {
+  padding-top: 42px;
+  padding-bottom: 160px;
+  text-align: center; }
+
+.text.footer hr {
+  color: #FBCF17;
+  border: 3px solid #FBCF17;
+  xwidth: 60%;
+  margin: auto; }
+
+.footericon {
+  display: block;
+  margin: auto;
+  padding-top: 42px;
+  padding-bottom: 14px;
+  padding-right: 14px; }
+
+.text.footer h4 {
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+  padding-top: 42px;
+  padding-bottom: 16px; }
+
+.text.footer .main-button {
+  font-size: 18px;
+  margin: auto;
+  width: 160px; }
 
 /* #Page Styles
 ================================================== */
