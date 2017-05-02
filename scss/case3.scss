@@ -1,171 +1,39 @@
-/*
-* Furybird Product and Service Design Consulting
-* Jennifer Hicks
-* April 2017
-*/
-/* Table of Content
-==================================================
-	#Site Styles
-		- MAIN
-		- MASTHEAD
-		- FOOTER
-	#Section Styles
-		- HERO
-	#Media Queries
-		- MOBILE
-		- TABLET
-*/
-/* #Site Styles - Sticker UI Book CSS Styles 05.10.14
-================================================== */
-
-/* MAIN */
-@import 'base';
-@import 'skeleton';
-
-
-
-body {
-	margin:0;
-	padding:0;}
-
-
-a {
-    color: #231F20;
-	text-decoration:none;}
-
-a:hover {
-    color: #1C8DBB;
-    xopacity:0.8;
-    xfilter:alpha(opacity=80);}
-
-
+/* GLOBAL STYLES */
 h1 {
-	font: 700 48px/48px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
 	color: #FF5F5F;
-	text-align:left;}
+	text-align: left;
+}
 
 h2 {
 	font: 700 36px/40px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-    color: #FF5F5F;
-    text-align:left;
-	text-transform: uppercase;}
-
-h3 {
-	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-    color: #FF5F5F;
-    text-align:left;}
-
-h4 {
-	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-    color: #000;
-    text-align:left;}
-
-
-h5{
-    font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
-	color: #9B9B9B;
-	text-align:left;
-	font-style: italic;}
-
-h6{
-	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
-	color: #000;
-}
-
-p{
-    font: 400 14px/22px 'Lato', Helvetica, Arial, sans-serif;
-	color: #454D56;
-	text-align:left;}
-
-img{
-	border:0px;}
-
-
-.text {
-	padding-top: 14px;
-	padding-bottom: 14px;}
-
-
-.main-button {
-	background-color: rgb(254, 191, 81);
-	border-radius:4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border: none;
-	color: #fff;
-	height: 48px;
-	font: 700 16px/24px 'Lato', Helvetica, Arial, sans-serif;
-	margin-top: 32px;
-	text-align: center;
-	text-decoration: none;
-	transition-delay: 0s;
-	transition-duration: 0.5s;
-	transition-property: all;
-	transition-timing-function: ease;
-	width: 160px;
-	-webkit-transition-delay: 0s;
-	-webkit-transition-duration: 0.5s;
-	-webkit-transition-property: all;
-	-webkit-transition-timing-function: ease;
-	}
-
-.main-button:hover{
-    background-color: #1C8DBB;
-    color: white;}
-
-.main-button:focus {
-	outline:0;}
-
-
-/* ================================================== */
-/* MASTHEAD */
-
-
-/* ================================================== */
-/* MASTHEAD */
-
-.header {
-	height: 124px;	}
-
-.text.nav {
-    padding-top:32px;
-    xtext-align:center}
-
-.text.nav ul {
-    list-style: none;
-    padding-top:24px;
-    width:100%;}
-
-.text.nav li {
-	list-style: none;
-	display: inline-block;
-	text-align:left;
-	vertical-align: middle;
-	text-wrap:none;
-	padding-left:28px;
-	padding-right:28px;
-	font:700 11px/18px 'Lato', Helvetica, Arial, sans-serif;
-	color: #595959;
+	color: #FF5F5F;
+	text-align: left;
 	text-transform: uppercase;
 }
 
-.text.nav li a{
-	text-decoration: none;
+h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FF5F5F;
+	text-align: left;
+}
+
+h4 {
+	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: left;
+}
+
+h5 {
+	font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
+	color: #9B9B9B;
+	text-align: left;
+	font-style: italic;
+}
+
+h6 {
+	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
 	color: #000;
 }
-
-.text.nav li a:hover{
-	color: #5fb881;
-}
-
-.text.nav object{
-	width:72px;
-	height:auto;
-	margin-left:-18px;}
-
-
-
-
 
 /* TEXT HERO */
 
@@ -184,10 +52,9 @@ img{
 	xpadding-right: 250px;}
 
 .text.hero #hero1{
-	width: 860px;
+	width: 90%;
 	height: auto;
 	text-align: center;
-
 	}
 
 
@@ -313,24 +180,18 @@ img{
 	padding-bottom:0px;}
 
 /* TEXT FOOTER */
-.text.footer{
+.text.footerq{
 	padding-top:64px;
-	padding-bottom:180px;}
+	padding-bottom:64px;}
 
 
-.text.footer hr{
-    width:30%;
+.text.footerq hr{
+  width:30%;
 	margin-top:32px;
 	border: 3px solid #FF5F5F;}
 
 
 
-
-
-
-
-/* #Page Styles
-================================================== */
 
 /* #Media Queries
 ================================================== */
@@ -350,8 +211,6 @@ img{
 			height: auto;
 			text-align: center;	}
 
-		#nav-item{
-			xpadding-right: 224px;}
 
 		.text.img2{
 			min-height: 310px;}
