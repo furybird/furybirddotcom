@@ -54,6 +54,10 @@ h3 {
 	font-size: 36px;
 	line-height: 42px;
 }
+.text.hero h1 a:hover{
+	text-decoration: underline;
+	opacity: 0.5;
+}
 
 .text.hero li {
 	list-style: none;
