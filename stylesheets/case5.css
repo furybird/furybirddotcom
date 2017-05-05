@@ -55,7 +55,7 @@ h6 {
   padding-right: 120px; }
 
 .text.client p {
-  padding-top: 24px; }
+  xpadding-top: 24px; }
 
 /* TEXT WIRES */
 .text.wires img {
@@ -70,6 +70,9 @@ h6 {
   min-height: 500px; }
 
 /* TEXT DOCUMENTATION */
+.text.documentation {
+  padding-top: 86px; }
+
 .text.documentation img {
   width: 100%;
   height: auto; }
