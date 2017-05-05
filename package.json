@@ -21,6 +21,7 @@
     "node-sass": "^4.5.2"
   },
   "dependencies": {
-    "bourbon": "^4.3.4"
+    "bourbon": "^4.3.4",
+    "node-sass": "^4.5.2"
   }
 }
