@@ -47,7 +47,8 @@ h6 {
 .text.hero #hero1 {
   width: 90%;
   height: auto;
-  text-align: center; }
+  display: block;
+  margin: auto; }
 
 /* TEXT CLIENT */
 .text.client #logo1 {
@@ -57,9 +58,6 @@ h6 {
 
 .text.client h6 {
   padding-right: 120px; }
-
-.text.client p {
-  padding-top: 24px; }
 
 /* TEXT CHALLENGES-TITLE */
 .text.challenges-title {
@@ -137,21 +135,13 @@ h6 {
 /* TEXT DETAIL */
 .text.detail5 {
   padding-top: 72px;
-  padding-bottom: 0px; }
+  padding-bottom: 124px; }
 
 /* TEXT IMG6 */
 .text.img6 {
   background: url("../assets/case3-img6.png") no-repeat center center;
   background-size: 100%;
   min-height: 540px;
-  padding-top: 0px;
-  padding-bottom: 0px; }
-
-/* TEXT IMG7 */
-.text.img7 {
-  background: url("../assets/case3-img7.png") no-repeat center center;
-  background-size: 100%;
-  min-height: 548px;
   padding-top: 0px;
   padding-bottom: 0px; }
 
