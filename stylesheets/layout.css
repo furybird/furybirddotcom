@@ -13,6 +13,10 @@ h3 {
   font-size: 36px;
   line-height: 42px; }
 
+.text.hero h1 a:hover {
+  text-decoration: underline;
+  opacity: 0.5; }
+
 .text.hero li {
   list-style: none;
   display: inline-block;
@@ -321,6 +325,9 @@ h3 {
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 530px) and (max-width: 767px) {
+  .text.hero h1 {
+    font-size: 28px;
+    line-height: 32px; }
   .text.works > .container .columns {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -341,6 +348,9 @@ h3 {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 529px) {
+  .text.hero h1 {
+    font-size: 28px;
+    line-height: 32px; }
   .text.works > .container .columns {
     margin-top: 5px;
     margin-bottom: 5px;
