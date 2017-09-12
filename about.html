@@ -46,6 +46,10 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fbcf17">
   <meta name="theme-color" content="#fbcf17">
 
+  <!-- Recaptcha
+  ================================================== -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -233,7 +237,7 @@
                 <object id="digicon" type="image/svg+xml" data="assets/digitalprod_icon39x74.svg">Your browser does not support SVG</object>
               </div>
               <h4>Digital Product Creation</h4>
-              <p>Formulation of gratifying products and experiences that respond to user input, render across a wide range of device sizes, adapt to changing business requirements and user feedback. Expertly crafted design elements that evoke a true expression of your brand are delivered via developer team integration or toolkit handoff.</p>
+              <p>Formulate gratifying products and experiences that respond to user input, render across a wide range of device sizes, and adapt to changing business requirements. Expertly crafted design elements that evoke a true expression of your brand are delivered via developer team integration or toolkit handoff.</p>
             </div>
 
             <div class="four columns">
@@ -315,8 +319,11 @@
 
                     <label for="subject">Tell me about your next project</label>
                     <textarea name="subject" placeholder="What are your company needs?" style="height:140px"></textarea>
-
-                    <input type="submit" value="Submit">
+                    <div class="g-recaptcha" data-sitekey="6LcHpCgUAAAAALe-lTRC2diwe3zwe0U0PcTQr2Rz">
+                      <input type="hidden" name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="">
+                      <input name="recaptcha_response_field" id="recaptcha_response_field" type="hidden" value="">
+                    </div>
+                    <input type="submit" value="Submit" onclick="return validateCaptcha();">
 
                       </form>
                   </div>
@@ -478,6 +485,12 @@ function myFunction() {
 }
 </script>
 <script src="js/onsubmit_event.js"></script>
+
+<script type="text/javascript">
+(function() {
+  showRecaptcha('recaptcha_div');
+})();
+</script>
 
 </body>
 </html>
