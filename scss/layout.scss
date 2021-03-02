@@ -1,0 +1,359 @@
+
+@mixin h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FCBF17;
+	text-align: left;
+}
+h3 {
+	@include h3;
+}
+
+
+@mixin work-rollover($content) {
+	a {
+		position:relative;
+		display:block;
+
+		&::after {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:calc(100% - 6px);
+			padding-top:32px;
+			padding-left:32px;
+			padding-right:32px;
+			box-sizing: border-box;
+			background-color:rgba(0,0,0,0.5);
+			opacity:0;
+			transition: opacity .5s;
+			content: $content;
+			@include h3;
+			font-size: 36px;
+			line-height: 42px;
+		}
+
+		&:hover {
+			cursor: pointer;
+			&::after {
+				opacity:1;
+				transition: opacity 0s;
+			}
+		}
+	}
+}
+
+/* TEXT HERO */
+.text.hero {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.text.hero h1{
+	color: #333;
+	font-size: 36px;
+	line-height: 42px;
+}
+.text.hero h1 a:hover{
+	text-decoration: underline;
+	opacity: 0.5;
+}
+
+.text.hero li {
+	list-style: none;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	text-wrap: none;
+	padding-right: 28px;
+}
+
+#twitter-item {
+	margin-top: -6px;
+}
+
+.text.hero li svg {
+	padding-right: 4px;
+	margin-bottom: -2px;
+}
+
+
+/* TEXT WORKS TITLE */
+.text.works-title {
+	padding-top: 64px;
+	padding-bottom: 0px;
+}
+
+.text.works {
+	padding-top: 24px;
+	padding-bottom: 64px;
+}
+
+
+/* TEXT TWITTER  */
+.text.tweets h4 {
+	padding-bottom: 12px;
+}
+
+.text.tweets .timeline-Tweet-author {
+	font: 700 11px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+}
+
+
+
+/* TEXT WORKS  */
+.text.works > .container {
+	.columns{
+		img{
+			height:220px;
+			width:auto;
+		}
+	}
+
+	> .row:nth-of-type(1) > .columns {
+		&:nth-of-type(1) {
+			@include work-rollover('Pager Mobile Integrated Healthcare On-demand Service and AI Triage Chatbot');
+		}
+		&:nth-of-type(2) {
+			@include work-rollover('Killer Inc. Paper Goods Supply Company Supplying Expert Tools for Sesigners');
+		}
+
+	}
+
+	> .row:nth-of-type(2) > .columns {
+		&:nth-of-type(1) {
+			@include work-rollover('Swiftbank Immersive 6-week Design Consulting Program & User-Validated Rapid Prototype');
+
+			img{
+				height:460px;
+				width:auto;
+			}
+		}
+
+		&:nth-of-type(2) {
+			background: none;
+
+			> .row {
+				&:nth-of-type(1) > .columns {
+					&:nth-of-type(1) {
+						margin-left: 0;
+						@include work-rollover('Mercury Custom Touchscreen Phone OS');
+						font-size: 16px;
+						line-height: 20px;
+					}
+
+					&:nth-of-type(2) {
+						margin-right: 0;
+						background-color: #FFB837;
+						height:220px;
+						opacity: 0.5;
+					}
+				}
+
+				&:nth-of-type(2) {
+					margin-bottom: 0;
+
+					> .columns {
+						margin-left: 0;
+						margin-right: 0;
+						@include work-rollover('Amplify Customized Android Tablet Operating System for Teachers and Students');
+					}
+				}
+			}
+		}
+	}
+	> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1) {
+				background-color: #FFB837;
+				height:220px;
+				opacity: 0.2;
+			}
+
+			&:nth-of-type(2) {
+				@include work-rollover('Project Joy Wealth Management Service');
+			}
+
+			&:nth-of-type(3) {
+				background-color: #FFB837;
+				height:220px;
+				opacity: 0.7;
+			}
+
+			&:nth-of-type(4) {
+				@include work-rollover('Trade Armor Day Trading Toolset');
+			}
+
+		}
+
+}
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.text.works > .container {
+
+		.columns{
+			a:after{
+				font-size: 26px !important;
+				line-height: 30px !important;
+				padding-left: 14px !important;
+				padding-top: 18px !important;
+				padding-right: 8px !important;
+			}
+			img{
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+			height: auto;
+			width: 100%;
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+			height: 173px;
+		}
+
+		> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1), &:nth-of-type(3) {
+				height: 173px;
+			}
+		}
+		}
+
+
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+	.text.works > .container {
+
+		.columns{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			padding: 0 0 0 0;
+
+			a:after{
+				font-size: 32px !important;
+				line-height: 36px !important;
+				padding-left: 14px !important;
+				padding-top: 18px !important;
+				padding-right: 8px !important;
+			}
+			img{
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+			height: auto;
+			width: 100%;
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+			height: 173px;
+		}
+
+		> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1), &:nth-of-type(3) {
+				height: 173px;
+			}
+		}
+		}
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+
+	.text.hero h1{ 
+				font-size: 28px;
+				line-height: 32px;
+		}
+
+	.text.works > .container {
+		.columns{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			padding: 0 0 0 0;
+
+			a:after{
+				font-size: 32px !important;
+				xline-height: 30px !important;
+			}
+			img{
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+			height: auto;
+			width: 100%;
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+			height: 173px;
+		}
+
+		> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1), &:nth-of-type(3) {
+				height: 173px;
+			}
+		}
+		}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 529px) {
+
+	.text.hero h1{
+			font-size: 28px;
+			line-height: 32px;
+	}
+
+	.text.works > .container {
+		.columns{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			padding: 0 0 0 0;
+
+			a:after{
+				font-size: 24px !important;
+				line-height: 30px !important;
+				padding-left: 14px !important;
+				padding-top: 18px !important;
+				padding-right: 8px !important;
+			}
+			img{
+				height: auto;
+				width: 100%;
+			}
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(1) img {
+			height: auto;
+			width: 100%;
+		}
+
+		> .row:nth-of-type(2) > .columns:nth-of-type(2) > .row:nth-of-type(1) > .columns:nth-of-type(2) {
+			height: 173px;
+		}
+
+		> .row:nth-of-type(3) > .columns {
+			&:nth-of-type(1), &:nth-of-type(3) {
+				height: 173px;
+			}
+		}
+		}
+
+}

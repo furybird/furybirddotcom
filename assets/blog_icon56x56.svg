@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>blog_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01About_DesktopHD-Copy" transform="translate(-689.000000, -4526.000000)">
+            <g id="Footer" transform="translate(623.000000, 4304.000000)">
+                <g id="blog_icon" transform="translate(66.000000, 222.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="28" cy="28" r="28"></circle>
+                    <path d="M36.366,38.76 C36.366,27.893 27.571,19.049 16.76,19.049 L16.76,14.373 C30.148,14.373 41.04,25.315 41.04,38.76 L36.366,38.76 Z M28.11,38.756 C28.11,35.699 26.928,32.828 24.781,30.674 C22.638,28.52 19.788,27.332 16.753,27.332 L16.753,22.658 C25.592,22.658 32.783,29.881 32.783,38.756 L28.11,38.756 Z M19.987,38.735 C18.2,38.735 16.751,37.283 16.751,35.496 C16.751,33.707 18.2,32.258 19.987,32.258 C21.775,32.258 23.225,33.707 23.225,35.496 C23.225,37.283 21.775,38.735 19.987,38.735 Z M27.625,3 C14.024,3 3,14.026 3,27.625 C3,41.227 14.024,52.25 27.625,52.25 C41.225,52.25 52.25,41.227 52.25,27.625 C52.25,14.026 41.225,3 27.625,3 L27.625,3 Z" id="Fill-220" fill="#FBCF17"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

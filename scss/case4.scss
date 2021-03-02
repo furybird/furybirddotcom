@@ -1,0 +1,177 @@
+/* GLOBAL STYLES */
+h1 {
+	color: #97D05D;
+	text-align: left;
+}
+
+h2 {
+	font: 700 36px/40px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #97D05D;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #97D05D;
+	text-align: left;
+}
+
+h4 {
+	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: left;
+}
+
+h5 {
+	font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
+	color: #9B9B9B;
+	text-align: left;
+	font-style: italic;
+}
+
+h6 {
+	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+/* TEXT HERO */
+
+.text.hero {
+	padding-top: 32px;
+	padding-bottom: 64px;}
+
+.text.hero h1{
+	margin-bottom: 4px;}
+
+.text.hero h2{
+	padding-top: 32px;
+	padding-bottom: 32px;}
+
+.text.hero h4{
+	xpadding-right: 250px;}
+
+.text.hero #hero1{
+	width: 90%;
+	height: auto;
+	margin-left:-12px;
+	}
+
+
+
+/* TEXT CLIENT */
+.text.client #logo1{
+	width: 130px;
+	height: auto;
+	padding-bottom:10px;}
+
+.text.client h6{
+	padding-right: 120px;}
+
+.text.client p{
+	padding-top: 24px;}
+
+
+
+/* TEXT WORKSHOPS */
+.text.workshopsimg{
+	background: url("../assets/case4-img2.png") no-repeat center;
+	background-size: 100%;
+	min-height: 550px;
+	padding-top:32px;
+	padding-bottom: 64px;
+}
+
+/* TEXT CONCEPTS */
+.text.concepts{
+	padding-top:64px;
+	padding-bottom:32px;
+}
+
+.text.concepts img{
+	width: 100%;
+}
+
+
+/* TEXT WIRES */
+.text.wires{
+	padding-top:64px;
+	padding-bottom:32px;
+}
+
+.text.wires img{
+	width: 100%;
+}
+
+/* TEXT DEMOS */
+.text.demos{
+	padding-top:64px;
+	padding-bottom:32px;
+}
+
+.text.demos img{
+	width: 100%;
+	margin-left:-24px;
+}
+
+/* TEXT FOOTER */
+.text.footerq{
+	padding-top:64px;
+	padding-bottom:64px;}
+
+
+.text.footerq hr{
+  width:30%;
+	margin-top:32px;
+	border: 3px solid #97D05D;}
+
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+		x.text.hero h4{
+			padding-right: 0px;}
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;	}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;}
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 530px) and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 400px;
+			height: auto;}
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 529px) {
+
+		img, iframe, object {
+			max-width: 272px;
+			height: auto;}
+
+	}

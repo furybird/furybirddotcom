@@ -1,0 +1,293 @@
+/* GLOBAL STYLES */
+h1 {
+	color: #FFB095;
+	text-align: left;
+}
+
+h2 {
+	font: 700 36px/40px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FFB095;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+h3 {
+	font: 700 28px/32px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #FFB095;
+	text-align: left;
+}
+
+h4 {
+	font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+	text-align: left;
+}
+
+h5 {
+	font: 700 16px/20px 'Lato', Helvetica, Arial, sans-serif;
+	color: #9B9B9B;
+	text-align: left;
+	font-style: italic;
+}
+
+h6 {
+	font: 700 32px/36px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+	color: #000;
+}
+
+/* TEXT HERO */
+
+.text.hero {
+	padding-top: 32px;
+	padding-bottom: 64px;}
+
+.text.hero h1{
+	margin-bottom: 4px;}
+
+.text.hero h2{
+	padding-top: 32px;
+	padding-bottom: 32px;}
+
+.text.hero #hero1{
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: auto;
+	}
+
+
+
+/* TEXT CLIENT */
+.text.client #logo1{
+	width: 200px;
+	height: auto;
+	padding-bottom:10px;}
+
+.text.client h6{
+	xpadding-right: 120px;
+	padding-bottom: 32px;
+}
+
+
+/* TEXT RESEARCHIMG */
+.text.researchimg{
+	background: url('../assets/case6-img2.png') no-repeat center center;
+	background-size: 100%;
+	min-height: 440px;
+}
+
+
+
+/* TEXT CONCEPTS */
+.text.concepts{
+	padding-bottom: 32px;
+	padding-top: 84px;
+}
+
+.text.concepts img{
+	width: 100%;
+	height: auto;
+}
+
+
+/* TEXT FINAL */
+.text.final{
+	padding-bottom: 32px;
+	padding-top: 84px;
+}
+
+
+.text.final img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+	padding-bottom: 32px;
+}
+
+
+/* TEXT FINAL IMG 1 */
+.text.finalimg1{
+	background: url('../assets/case6-img6.png') no-repeat center center;
+	background-size: 100%;
+	min-height: 580px;
+	margin-bottom: 12px;
+}
+
+/* TEXT FINAL IMG 2 */
+.text.finalimg2{
+	background: url('../assets/case6-img7.png') no-repeat center center;
+	background-size: 100%;
+	min-height: 580px;
+	margin-bottom: 124px;
+}
+
+
+/* TEXT FOOTER */
+.text.footerq{
+	padding-top:64px;
+	padding-bottom:64px;}
+
+
+.text.footerq hr{
+  width:30%;
+	margin-top:32px;
+	border: 3px solid #FFB095;}
+
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+		.text.hero h4{
+			padding-right: 0px;}
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;	}
+
+
+		.text.img2{
+			min-height: 310px;}
+
+		.text.img3{
+			min-height: 410px;}
+
+		.text.img4{
+			min-height: 400px;}
+
+		.text.img5{
+			min-height: 350px;}
+
+		.text.img6{
+			min-height: 430px;}
+
+		.text.img7{
+			min-height: 390px;}
+
+		.text.client h6{
+			padding-right: 0px;}
+
+		.text.detail2{
+			padding-top:32px;
+			padding-bottom:0px;}
+
+		.text.detail4{
+			padding-top:96px;
+			padding-bottom:0px;}
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 724px;
+			height: auto;
+			text-align: center;}
+
+		.text.client h6{
+			padding-right: 0px;}
+
+		.text.img2{
+			min-height: 226px;}
+
+		.text.img3{
+			min-height: 280px;}
+
+		.text.img4{
+			min-height: 290px;}
+
+		.text.img5{
+			min-height: 250px;}
+
+		.text.img6{
+			min-height: 310px;}
+
+		.text.img7{
+			min-height: 270px;}
+
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 530px) and (max-width: 767px) {
+
+		img, iframe, object {
+			max-width: 400px;
+			height: auto;}
+
+		.text.client h6{
+			padding-right: 0px;}
+
+		.text.img2{
+			min-height: 120px;}
+
+		.text.img3{
+			min-height: 140px;}
+
+		.text.img4{
+			min-height: 150px;}
+
+		.text.img5{
+			min-height: 150px;}
+
+		.text.img6{
+			min-height: 180px;}
+
+		.text.img7{
+			min-height: 160px;}
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 529px) {
+
+		img, iframe, object {
+			max-width: 272px;
+			height: auto;}
+
+		.text.client h6{
+			padding-right: 0px;}
+
+		.text.img2{
+			min-height: 120px;}
+
+		.text.img3{
+			min-height: 140px;}
+
+		.text.img4{
+			min-height: 150px;}
+
+		.text.img5{
+			min-height: 150px;}
+
+		.text.img6{
+			min-height: 180px;}
+
+		.text.img7{
+			min-height: 160px;}
+
+		.text.detail1{
+			padding-top:42px;
+			padding-bottom:0px;}
+
+		.text.detail3{
+			padding-top:32px;
+			padding-bottom:0px;}
+
+		.text.detail5{
+			padding-top:32px;
+			padding-bottom:0px;}
+
+	}

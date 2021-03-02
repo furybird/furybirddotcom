@@ -1,0 +1,169 @@
+@import 'bourbon';
+
+	/* TEXT HERO */
+  .text.hero img {
+    width:100%;
+		height: auto;
+  }
+
+
+
+  /* TEXT SERVICES */
+  .text.services {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+    .text.services h3 {
+    padding-bottom: 32px;
+  }
+
+  .text.services .row{
+    margin-bottom: 0px;
+  }
+
+  .text.services object {
+    height: 56px;
+    width: auto;
+  }
+
+  .text.services #expertise {
+    margin-top:65px;
+  }
+
+  /* TEXT CONTACT */
+  .text.contact .container{
+		padding-left: 0px;
+  }
+
+	.text.contact label {
+		font: 700 20px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align: left;
+	}
+
+  input[type=text],
+  textarea {
+    width: 100%;
+    padding: 8px 12px 8px 8px;
+    background-color: #F2F2F2;
+		border:none;
+    border-radius: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+		font: 400 12px/20px 'Lato', Helvetica, Arial, sans-serif;
+    color: #000;
+    text-align: left;
+  }
+
+	input[type=text]:focus, textarea:focus{
+			border:2px solid #63B7FB;
+		}
+
+	select#service{
+			height: 38px;
+			width: 50%;
+			background-color: #F2F2F2;
+			border:none;
+	    border-radius: none;
+	    box-sizing: border-box;
+	    margin-top: 6px;
+	    margin-bottom: 16px;
+	    resize: vertical;
+			font: 400 12px/24px 'Lato', Helvetica, Arial, sans-serif;
+	    xcolor: #000;
+	    text-align: left;
+	}
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]{
+		background-color: #fff;
+		border: 2px solid #FBCF17;
+		color: #FBCF17;
+		height: 48px;
+		font: 700 22px/24px 'PT Sans Narrow', Helvetica, Arial, sans-serif;
+		margin-top: 32px;
+		padding: 0 32px 0 32px;
+		text-align: center;
+		text-decoration: none;
+		transition-delay: 0s;
+		transition-duration: 0.5s;
+		transition-property: all;
+		transition-timing-function: ease;
+		-webkit-transition-delay: 0s;
+		-webkit-transition-duration: 0.5s;
+		-webkit-transition-property: all;
+		-webkit-transition-timing-function: ease;
+  }
+
+	input[type=submit]:hover {
+		border: 2px solid #63B7FB;
+		background-color: #fff;
+		color: #63B7FB;
+	}
+
+	input[type=submit]:focus {
+		outline: 0;
+	}
+
+  form[name=cform] {
+    label.missing {
+      color:#63B7FB;
+      text-transform: lowercase;
+      &:before {
+        color:#63B7FB;
+          text-transform: none;
+        content: 'Please enter your ';
+      }
+    }
+    label[for=subject].missing:before {
+      content: 'Please ';
+    }
+
+    label.formaterror {
+      color:#63B7FB;
+      text-transform: lowercase;
+      &:before {
+        color:#63B7FB;
+          text-transform: none;
+        content: 'Please enter a valid ';
+      }
+    }
+  }
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .text.hero img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 530px) and (max-width: 767px) {
+
+  .text.hero img{
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 529px) {
+
+  .text.hero img{
+    width: 55%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+}

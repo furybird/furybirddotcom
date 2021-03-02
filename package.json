@@ -1,0 +1,27 @@
+{
+  "name": "furybird",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --include-path node_modules/bourbon/app/assets/stylesheets/ --watch scss/ --output stylesheets/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furybird/furybirddotcom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furybird/furybirddotcom/issues"
+  },
+  "homepage": "https://github.com/furybird/furybirddotcom#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  },
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "node-sass": "^4.5.2"
+  }
+}
